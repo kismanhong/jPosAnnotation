@@ -241,36 +241,36 @@ public class CardAcceptorInfo {
 	
 }
 
-Create Sale ISO Message :
+Create Sale ISO Message : <br/>
 ISOMsg isoMsg = ISOParser.createSaleISO(requestMessage);
 
-Create Echo ISO Message :
+Create Echo ISO Message : <br/>
 ISOMsg isoMsg = ISOParser.createEchoISO(requestMessage);
 
-Create Void ISO Message :
+Create Void ISO Message : <br/>
 ISOMsg isoMsg = ISOParser.createVoidISO(requestMessage);
 
-Create Reversal ISO Message :
+Create Reversal ISO Message : <br/>
 ISOMsg isoMsg = ISOParser.createReversalISO(requestMessage);
 
-Create Void Reversal ISO Message :
+Create Void Reversal ISO Message : <br/>
 ISOMsg isoMsg = ISOParser.createVoidReversalISO(requestMessage);
 
-Create Sale Request from ISO Message :
+Create Sale Request from ISO Message : <br/>
 RequestMessage reqMessage = (RequestMessage) ISOParser.saleISOToObject(RequestMessage.class, isoMsg);
 
-Create Echo Request from ISO Message :
+Create Echo Request from ISO Message : <br/>
 RequestMessage reqMessage = (RequestMessage) ISOParser.echoISOToObject(RequestMessage.class, isoMsg);
 
-Create Void Request from ISO Message :
+Create Void Request from ISO Message : <br/>
 RequestMessage reqMessage = (RequestMessage) ISOParser.voidISOToObject(RequestMessage.class, isoMsg);
 
-Create Reversal Request from ISO Message :
+Create Reversal Request from ISO Message : <br/>
 RequestMessage reqMessage = (RequestMessage) ISOParser.reversalISOToObject(RequestMessage.class, isoMsg);
 
-Create Void Reversal Request from ISO Message :
+Create Void Reversal Request from ISO Message : <br/>
 RequestMessage reqMessage = (RequestMessage) ISOParser.voidReversalISOToObject(RequestMessage.class, isoMsg);
 
-Convert ISO Message to Sale Response :
+Convert ISO Message to Sale Response : <br/>
 RequestMessage reqMessage = (RequestMessage) ISOParser.isoToObject(RequestMessage.class, isoMsg, CommandType.SALE_RESPONSE);
 CommandType => SALE_RESPONSE, ECHO_RESPONSE, VOID_RESPONSE, REVERSAL_RESPONSE, VOID_REVERSAL_RESPONSE
