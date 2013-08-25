@@ -18,10 +18,6 @@ import com.softtech.jpos.annotation.Void;
 import com.softtech.jpos.annotation.VoidReversal;
 import com.softtech.jpos.enumer.PadType;
 
-/**
- * @author Kisman Hong
- *
- */
 @JPos(echoMTI = "0800", reversalMTI = "0400", saleMTI = "0200", voidMTI = "0800", voidReversalMTI="0300")
 public class RequestMessage {
 	
@@ -156,10 +152,6 @@ import com.softtech.jpos.annotation.Echo;
 import com.softtech.jpos.annotation.Sale;
 import com.softtech.jpos.annotation.Ignore;
 
-/**
- * @author Kisman Hong
- *
- */
 public class CardAcceptor {
 	@Sale(fldNo = 2)
 	@Echo(fldNo = 2)
@@ -228,10 +220,6 @@ package com.softtech.jpos.test.model;
 import com.softtech.jpos.annotation.Echo;
 import com.softtech.jpos.annotation.Sale;
 
-/**
- * @author Kisman Hong
- *
- */
 public class CardAcceptorInfo {
 	
 	@Sale(fldNo = 48)
